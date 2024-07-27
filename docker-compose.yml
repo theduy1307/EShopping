@@ -4,3 +4,9 @@
     build:
       context: .
       dockerfile: Catalog/Catalog.API/Dockerfile
+
+  catalog.api-1:
+    image: catalog.api-1
+    build:
+      context: .
+      dockerfile: Catalog/Catalog.API/Dockerfile

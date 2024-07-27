@@ -14,6 +14,7 @@ public class CatalogContext : ICatalogContext
     {
         var client = new MongoClient(configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
         var database = client.GetDatabase(configuration.GetValue<string>("DatabaseSettings:DatabaseName"));
+        var aaa = configuration.GetValue<string>("DatabaseSettings:BrandsCollection");
         Brands = database.GetCollection<ProductBrand>(
             configuration.GetValue<string>("DatabaseSettings:BrandsCollection"));
         Types = database.GetCollection<ProductType>(

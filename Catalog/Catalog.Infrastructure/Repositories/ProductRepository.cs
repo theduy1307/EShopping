@@ -14,6 +14,14 @@ public class ProductRepository : IProductRepository, IBrandRepository, ITypesRep
         _context = context;
     }
     
+    public async Task<IEnumerable<Product>> GetProducts()
+    {
+        return await _context
+            .Products
+            .Find(p => true)
+            .ToListAsync();
+    }
+    
     public async Task<Product> GetProduct(string id)
     {
         return await _context
