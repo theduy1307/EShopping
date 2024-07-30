@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Text.Json;
 using Catalog.Core.Entities;
 using MongoDB.Driver;
@@ -9,7 +10,7 @@ public class CatalogContextSeed
     public static void SeedData(IMongoCollection<Product> productCollection)
     {
         bool checkProducts = productCollection.Find(b => true).Any();
-        string path = Path.Combine("Data", "SeedData", "products.json");
+        string path = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "Data", "SeedData", "products.json");
         if (!checkProducts)
         {
             var productsData = File.ReadAllText(path);

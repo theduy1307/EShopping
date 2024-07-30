@@ -7,6 +7,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4ECF27A5-4F1C-41F9-805A-D6C6645090FF}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
+		docker-compose.override.yml = docker-compose.override.yml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Catalog\Catalog.API\Catalog.API.csproj", "{EAB385E0-C1AC-422B-A13F-241AE9EE3E8D}"
@@ -17,17 +18,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Application", "Cata
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Infrastructure", "Catalog\Catalog.Infrastructure\Catalog.Infrastructure.csproj", "{A5904A19-9AE3-420B-9E62-281ADEF91329}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{F5C4973D-706F-41E3-A3F7-F70E08539B78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.Application", "Services\Basket\Basket.Application\Basket.Application.csproj", "{A73DF76D-2314-4EA4-BB0F-E4AC485253C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{89F657B7-8DFC-4D5B-80F4-25590C31450B} = {23D9B0AE-67FB-489D-B87F-E447B83CF9A9}
 		{EAB385E0-C1AC-422B-A13F-241AE9EE3E8D} = {89F657B7-8DFC-4D5B-80F4-25590C31450B}
 		{B4A9B26F-280F-4894-BCA1-1FCE6C24C2C1} = {89F657B7-8DFC-4D5B-80F4-25590C31450B}
 		{E49DA0EC-1B5C-4A08-ADE1-58ADC97A71F9} = {89F657B7-8DFC-4D5B-80F4-25590C31450B}
 		{A5904A19-9AE3-420B-9E62-281ADEF91329} = {89F657B7-8DFC-4D5B-80F4-25590C31450B}
+		{F5C4973D-706F-41E3-A3F7-F70E08539B78} = {23D9B0AE-67FB-489D-B87F-E447B83CF9A9}
+		{A73DF76D-2314-4EA4-BB0F-E4AC485253C5} = {F5C4973D-706F-41E3-A3F7-F70E08539B78}
+		{89F657B7-8DFC-4D5B-80F4-25590C31450B} = {23D9B0AE-67FB-489D-B87F-E447B83CF9A9}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EAB385E0-C1AC-422B-A13F-241AE9EE3E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,5 +53,9 @@ Global
 		{A5904A19-9AE3-420B-9E62-281ADEF91329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5904A19-9AE3-420B-9E62-281ADEF91329}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5904A19-9AE3-420B-9E62-281ADEF91329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73DF76D-2314-4EA4-BB0F-E4AC485253C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73DF76D-2314-4EA4-BB0F-E4AC485253C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73DF76D-2314-4EA4-BB0F-E4AC485253C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73DF76D-2314-4EA4-BB0F-E4AC485253C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
